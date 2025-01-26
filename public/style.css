@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.div-posts {
+    border: 2px solid pink;
+    border-radius: 13px;
+    width: 18rem;
+    margin: 1rem 0 1rem 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btns {
+    border: 1px solid palevioletred;
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+}
+.btns:hover {
+    background-color: palevioletred;
+    color: white;
+}
+form {
+    display: inline-block;
+}
+header {
+    background-color: pink;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    height: 5rem;
+}
+header div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header form {
+    margin-left: 2rem;
+}

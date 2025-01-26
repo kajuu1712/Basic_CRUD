@@ -1,0 +1,15 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+    <div class="div-posts">
+        <b>id = <%= post.id %></b>
+        <br>
+        <h4>Username: @<%= post.name %></h4>
+        <b><%= post.content %></b> <br> <br>
+        <form method="GET" action="/posts/<%= post.id %>/edit">
+            <button class="btns">Edit</button>
+        </form>
+        <form method="POST" action="/posts/<%= post.id %>?_method=DELETE">
+            <button class="btns">Delete</button>
+        </form>
+    </div>
+</body>

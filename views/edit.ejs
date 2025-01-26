@@ -1,0 +1,11 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+   <div class="div-posts">
+        <h5>Username: @<%= post.name %></h5>
+        <form method="POST" action="/posts/<%= post.id %>?_method=PUT">
+            <textarea name="content" ><%= post.content %></textarea>
+            <br>
+            <button class="btns">Done</button>
+        </form>
+   </div>
+</body>

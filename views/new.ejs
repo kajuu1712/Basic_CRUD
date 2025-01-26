@@ -1,0 +1,19 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+    <h5>Create a post</h5>
+    <div class="div-posts">
+        <form method="POST" action="/posts">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </div>
+            <br>
+            <div>
+                <label for="content">Content</label>
+                <textarea name="content"></textarea>
+            </div>
+            <br>
+            <button class="btns">Post</button>
+        </form>
+    </div>
+</body>
